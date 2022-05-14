@@ -1,13 +1,6 @@
 import telebot
 from telebot import types
 import random
-from pyowm import OWM
-from pyowm.utils import config as cfg
-
-config = cfg.get_default_config()
-config['language'] = 'RU'
-
-owm = OWM('<aed427947372190c9a5374b27010df16>', config)
 
 bot = telebot.TeleBot('5335062275:AAH_nUbdJt79KDTb7FWNiBSuH15i-kUkeXE')
 
