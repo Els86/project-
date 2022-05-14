@@ -10,7 +10,7 @@ def start(message):
     item1 = types.KeyboardButton('Выкинуть рандом')
 
     markup.add(item1)
-    bot.send_message(message.chat.id,'Здравствуй, {0.first_name}!\nНажми чтобы получить число от 1 до 1000🎲 ' . format(message.from_user), reply_markup = markup)
+    bot.send_message(message.chat.id,'Здравствуй, {0.first_name}!\nНажми чтобы получить число от 1 до 1000🎲 ' . format(message.from_user), reply_markup = markup),'Здравствуй, {0.first_name}!\nНажми чтобы получить число от 1 до 1000🎲 ' . format(message.from_user), reply_markup = markup)
 
 @bot.message_handler(content_types=['text'])
 def randomizer(message):
