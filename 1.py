@@ -24,16 +24,10 @@ def start(message):
 
     bot.send_message(message.from_user.id, text= 'Привет, {0.first_name}\nЯ твой бот советчик😏\nО чем рассказать?'.format(message.from_user), reply_markup=markup)
 
-
-
 @bot.callback_query_handler(func=lambda call: True)
 def callback(call):
 
 #ПОГОДА
-
-
-
-
 
 #КОТ НАСТРОЕНИЕ
     if call.message:
@@ -90,8 +84,5 @@ def callback(call):
     if call.data == '0':
             sovet = random.choice(Sovetnik)
             bot.send_message(call.message.chat.id, sovet)
-
-
-
 
 bot.polling(none_stop=True, interval=0)
